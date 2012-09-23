@@ -46,7 +46,7 @@ public class ELMBT {
 	// HTC Droid, HTC Thunderbolt, And many more. All have bugs that prevent normal Bluetooth logic to fail so we are forced to work around the bugs by some simple reflection statements.
 	//   http://stackoverflow.com/questions/4444235/problems-connecting-with-bluetooth-android
 	//   http://code.google.com/p/backport-android-bluetooth/issues/detail?id=5
-	final boolean USE_REFLECTION = true;
+	final boolean USE_REFLECTION = false;
 	
 	GeneralStats mGenStats = new GeneralStats();
 
@@ -57,7 +57,7 @@ public class ELMBT {
 	// keeps track of number of sequential connect() failures. reset to 0 upon successful connect.
 	int mSuccessiveFailedConnects = 0;
 	// defines the maximum number of failures we allow ourself before giving up completely and shutting ourself down. 
-	int mMaxSuccessiveConnectFails = 5;
+	int mMaxSuccessiveConnectFails = 10;
 
 	// minimum number of seconds that must elapse between two connect()'s. 
 	int MINIMUM_RECONNECT_PERIOD = 2;
