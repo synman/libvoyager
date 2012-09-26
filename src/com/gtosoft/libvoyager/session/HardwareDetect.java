@@ -35,7 +35,7 @@ import com.gtosoft.libvoyager.util.PIDDecoder;
  */
 public class HardwareDetect {
 	boolean mThreadsOn = true;
-	private static final boolean DEBUG = true;
+	private static final boolean DEBUG = false;
 
 	boolean mdetectionHasExecuted = false;
 	

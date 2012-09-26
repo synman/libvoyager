@@ -40,7 +40,7 @@ public class ServiceHelper {
 //		registerBroadcastReceivers();
 	}
 
-	private final boolean DEBUG = true;
+	private final boolean DEBUG = false;
 
 	/**
 	 * Registers all broadcast receivers. When adding broadcast receivers here,

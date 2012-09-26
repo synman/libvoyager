@@ -649,8 +649,8 @@ public class OBD2Session {
 					try {
 						hedr = responses[i].substring(0, 12);
 					} catch (Exception e) {
-						msg("parseOBDResponse(): Malformed packet. not 29-bit? "
-								+ responses[i] + " err=" + e.getMessage());
+//						msg("parseOBDResponse(): Malformed packet. not 29-bit? "
+//								+ responses[i] + " err=" + e.getMessage());
 						// skip the packet by continuing.
 						hedr = "?";
 					}
@@ -661,8 +661,8 @@ public class OBD2Session {
 					try {
 						hedr = responses[i].substring(0, 3);
 					} catch (Exception e) {
-						msg("parseOBDResponse(): Malformed packet. not 11-bit? "
-								+ responses[i] + " err=" + e.getMessage());
+//						msg("parseOBDResponse(): Malformed packet. not 11-bit? "
+//								+ responses[i] + " err=" + e.getMessage());
 						// skip the packet by continuing.
 						hedr = "?";
 					}

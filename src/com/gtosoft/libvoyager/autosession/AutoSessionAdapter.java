@@ -30,7 +30,7 @@ import com.gtosoft.libvoyager.util.OOBMessageTypes;
 
 
 public class AutoSessionAdapter {
-	final boolean DEBUG = true;
+	final boolean DEBUG = false;
 	HybridSession	 hs; 					// hybrid session is the top of the libVoyager pyramid. it manages everything else. 
 	Context			 mctxParentService;		// a reference to the parent context so that we can do things like work with Bluetooth. 
 	BluetoothAdapter mbtAdapter;

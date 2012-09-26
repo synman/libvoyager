@@ -25,7 +25,7 @@ import com.gtosoft.libvoyager.util.GeneralStats;
 
 
 public class CommandSession {
-	final boolean DEBUG = true;
+	final boolean DEBUG = false;
 	
 	// A place to store stats. Collected by our upstream friends. 
 	GeneralStats mgStats = new GeneralStats();

@@ -23,7 +23,7 @@ import com.gtosoft.libvoyager.util.RoutineScan;
 public class AutoSessionOBD {
 
 	GeneralStats	mgStats = new GeneralStats();
-	boolean DEBUG = true;
+	boolean DEBUG = false;
 	HybridSession 	hs;
 	EventCallback  	mParentOOBMessageHandler = null;
 	RoutineScan     rs;

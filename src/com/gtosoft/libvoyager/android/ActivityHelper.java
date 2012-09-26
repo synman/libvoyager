@@ -36,7 +36,7 @@ public class ActivityHelper {
 	Context mctxParent = null;
 	EventCallback mOnELMDeviceChosenCallback = null;
 	EventCallback mParentOOBHandler = null;
-	private final boolean DEBUG = true;
+	private final boolean DEBUG = false;
 	Thread mDiscoveryThread = null;
 
 	/**
@@ -99,6 +99,8 @@ public class ActivityHelper {
 					return;
 				}
 
+				msg("device " + device.getName());
+				
 				// Does it have a name that suggests it is an OBD device?
 				if (	device.getName().toLowerCase().contains("obd") || 
 						device.getName().toLowerCase().contains("cantool") ||
